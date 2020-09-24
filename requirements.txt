@@ -49,7 +49,7 @@ kombu==4.2.1
 linear-tsv==1.1.0
 Mako==1.0.7
 Markdown==2.6.11
-MarkupSafe==1.0
+MarkupSafe==1.1.1
 numpy==1.15.2
 openpyxl==2.4.11
 pandas==0.23.4
