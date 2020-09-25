@@ -1,8 +1,8 @@
 import os
 
 AUTH_ROLE_PUBLIC = 'Public'
-# AUTH_USER_REGISTRATION = True
-# AUTH_USER_REGISTRATION_ROLE = "Admin"
+AUTH_USER_REGISTRATION = True
+AUTH_USER_REGISTRATION_ROLE = "Public"
 
 # Superset specific config
 ROW_LIMIT = 5000
