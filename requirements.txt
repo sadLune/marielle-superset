@@ -79,3 +79,4 @@ sqlparse
 superset==0.30.1
 wtforms-json
 msgpack>=1.0.0, <1.1
+pyarrow>=1.0.1, <1.1
