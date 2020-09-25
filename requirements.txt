@@ -76,3 +76,4 @@ SQLAlchemy
 SQLAlchemy-Utils
 sqlparse
 superset==0.30.1
+wtforms-json
