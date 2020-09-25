@@ -16,7 +16,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:////app/.superset/superset.db'
 # Flask-WTF flag for CSRF
 WTF_CSRF_ENABLED = True
 # Add endpoints that need to be exempt from CSRF protection
-WTF_CSRF_EXEMPT_LIST = []
+WTF_CSRF_EXEMPT_LIST = ['heroku.com', 'marielle-superset.herokuapp.com']
 # A CSRF token that expires in 1 year
 WTF_CSRF_TIME_LIMIT = 'None'
 
