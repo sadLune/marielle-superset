@@ -23,7 +23,7 @@ Flask-AppBuilder
 Flask-Babel==1.0.0
 Flask-Caching
 Flask-Compress
-Flask-Login
+Flask-Login--0.4.1
 Flask-Migrate
 Flask-OpenID
 Flask-Script
