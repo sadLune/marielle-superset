@@ -8,7 +8,7 @@ bleach>=3.0.2, <4.0.0
 boto3
 botocore
 cchardet
-celery>=4.3.0, <5.0.0, !=4.4.1
+celery==4.4.7
 certifi
 cffi
 colorama
@@ -47,7 +47,7 @@ Jinja2
 jmespath
 jsonlines
 jsonschema
-kombu<4.7,>=4.6.10
+kombu==4.4.0
 linear-tsv
 Mako
 markdown>=3.0
@@ -86,4 +86,3 @@ python-dotenv
 retry>=0.9.2
 selenium>=3.141.0
 slackclient==2.5.0
-vine
