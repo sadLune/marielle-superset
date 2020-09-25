@@ -14,7 +14,7 @@ SECRET_KEY = os.urandom(24)
 # you want to explore are managed directly in the web UI
 SQLALCHEMY_DATABASE_URI = 'sqlite:////app/.superset/superset.db'
 # Flask-WTF flag for CSRF
-WTF_CSRF_ENABLED = False
+WTF_CSRF_ENABLED = True
 # Add endpoints that need to be exempt from CSRF protection
 WTF_CSRF_EXEMPT_LIST = ['heroku.com', 'marielle-superset.herokuapp.com']
 # A CSRF token that expires in 1 year
