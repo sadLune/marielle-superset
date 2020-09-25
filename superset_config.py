@@ -18,7 +18,7 @@ WTF_CSRF_ENABLED = True
 # Add endpoints that need to be exempt from CSRF protection
 WTF_CSRF_EXEMPT_LIST = ['heroku.com', 'marielle-superset.herokuapp.com']
 # A CSRF token that expires in 1 year
-WTF_CSRF_TIME_LIMIT = 'None'
+WTF_CSRF_TIME_LIMIT = 3600
 
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = ''
