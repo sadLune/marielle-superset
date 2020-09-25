@@ -2,7 +2,7 @@ import os
 # Superset specific config
 ROW_LIMIT = 5000
 
-SUPERSET_WEBSERVER_PORT = 8088
+SUPERSET_WEBSERVER_PORT = 8080
 
 # Flask App Builder configuration
 # Your App secret key
