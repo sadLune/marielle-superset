@@ -6,7 +6,7 @@ AUTH_USER_REGISTRATION_ROLE = "Public"
 
 # Superset specific config
 ROW_LIMIT = 5000
-TOKEN = os.urandom(24)
+TOKEN = str(os.urandom(24))
 
 # Flask App Builder configuration
 # Your App secret key
@@ -19,7 +19,7 @@ SECRET_KEY = TOKEN
 # you want to explore are managed directly in the web UI
 SQLALCHEMY_DATABASE_URI = 'sqlite:////app/.superset/superset.db'
 # Flask-WTF flag for CSRF
-WTF_CSRF_ENABLED = False
+WTF_CSRF_ENABLED = True
 # Add endpoints that need to be exempt from CSRF protection
 WTF_CSRF_EXEMPT_LIST = []
 # A CSRF token that expires in 1 year
