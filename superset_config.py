@@ -1,5 +1,7 @@
 import os
 
+AUTH_ROLE_PUBLIC = 'Public'
+
 # Superset specific config
 ROW_LIMIT = 5000
 TOKEN = os.urandom(24)
