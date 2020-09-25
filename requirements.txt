@@ -2,6 +2,7 @@ alembic
 amqp
 asn1crypto
 Babel
+backoff>=1.8.0
 billiard
 bleach
 boto3
