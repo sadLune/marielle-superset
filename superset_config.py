@@ -2,10 +2,11 @@ import os
 
 # Superset specific config
 ROW_LIMIT = 5000
+TOKEN = os.urandom(24)
 
 # Flask App Builder configuration
 # Your App secret key
-SECRET_KEY = os.urandom(24)
+SECRET_KEY = TOKEN
 
 # The SQLAlchemy connection string to your database backend
 # This connection defines the path to the database that stores your
@@ -19,7 +20,7 @@ WTF_CSRF_ENABLED = True
 WTF_CSRF_EXEMPT_LIST = ['heroku.com', 'marielle-superset.herokuapp.com']
 # A CSRF token that expires in 1 year
 WTF_CSRF_TIME_LIMIT = 3600
-
+WTF_CSRF_SECRET_KEY = TOKEN
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = ''
 
