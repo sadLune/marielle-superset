@@ -1,4 +1,5 @@
 import os
+
 # Superset specific config
 ROW_LIMIT = 5000
 
@@ -23,3 +24,5 @@ WTF_CSRF_TIME_LIMIT = 60 * 60 * 24 * 365
 MAPBOX_API_KEY = ''
 
 SESSION_COOKIE_HTTPONLY = False
+
+SESSION_COOKIE_SAMESITE = 'None'
