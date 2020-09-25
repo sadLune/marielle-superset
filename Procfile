@@ -6,4 +6,4 @@ web: gunicorn \
     --limit-request-line 0 \
     --limit-request-field_size 0 \
     --statsd-host localhost:8125 \
-    superset:app
+    "superset.app:create_app()"
