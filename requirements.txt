@@ -92,3 +92,4 @@ WTForms-JSON==0.3.3
 xlrd==1.1.0
 psycopg2==2.8.6
 pymssql
+email-validator==1.1.1
