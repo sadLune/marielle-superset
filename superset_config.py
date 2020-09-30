@@ -16,12 +16,12 @@ SECRET_KEY = '\xbf)zw\x12\xf0D\xc8\xe2\xd8!z\xf1c\x1c6t\x0c\x86eo)\x80*'
 # superset metadata (slices, connections, tables, dashboards, ...).
 # Note that the connection information to connect to the datasources
 # you want to explore are managed directly in the web UI
-SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://{}:{}@{}:{}/{}".format(os.getenv("PG_USER"),
-                                                                        os.getenv("PG_PASSWORD"),
-                                                                        os.getenv("PG_HOST"),
-                                                                        os.getenv("PG_PORT"),
-                                                                        os.getenv("PG_DBNAME")
-                                                                        )
+# SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://{}:{}@{}:{}/{}".format(os.getenv("PG_USER"),
+#                                                                         os.getenv("PG_PASSWORD"),
+#                                                                         os.getenv("PG_HOST"),
+#                                                                         os.getenv("PG_PORT"),
+#                                                                         os.getenv("PG_DBNAME")
+#                                                                         )
 # Flask-WTF flag for CSRF
 WTF_CSRF_ENABLED = False
 # Add endpoints that need to be exempt from CSRF protection
