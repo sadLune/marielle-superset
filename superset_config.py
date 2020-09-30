@@ -9,7 +9,7 @@ ROW_LIMIT = 5000
 
 # Flask App Builder configuration
 # Your App secret key
-SECRET_KEY = '\xbf)zw\x12\xf0D\xc8\xe2\xd8!z\xf1c\x1c6t\x0c\x86eo)\x80*'
+SECRET_KEY = os.getenv("FLASK_SECRETE_KEY")
 
 # The SQLAlchemy connection string to your database backend
 # This connection defines the path to the database that stores your
@@ -29,7 +29,7 @@ WTF_CSRF_EXEMPT_LIST = ['login', 'superset.csrf_token', ]
 # A CSRF token that expires in 1 year
 WTF_CSRF_TIME_LIMIT = 3600
 # Set this API key to enable Mapbox visualizations
-MAPBOX_API_KEY = ''
+MAPBOX_API_KEY = os.getenv("MAPBOX_API_KEY")
 
 SESSION_COOKIE_HTTPONLY = False
 
