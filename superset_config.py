@@ -1,6 +1,6 @@
 import os
 
-AUTH_TYPE = 1  # Database Authentication
+# AUTH_TYPE = 1  # Database Authentication
 # AUTH_USER_REGISTRATION = True
 # AUTH_USER_REGISTRATION_ROLE = "Public"
 
@@ -33,7 +33,7 @@ MAPBOX_API_KEY = ''
 
 SESSION_COOKIE_HTTPONLY = False
 
-SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = None
 
 # RECAPTCHA_USE_SSL = False
 # RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC')
