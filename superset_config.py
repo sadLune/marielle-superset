@@ -26,10 +26,10 @@ SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://{}:{}@{}:{}/{}".format(os.geten
 # Flask-WTF flag for CSRF
 WTF_CSRF_ENABLED = False
 # Add endpoints that need to be exempt from CSRF protection
-WTF_CSRF_EXEMPT_LIST = []
+# WTF_CSRF_EXEMPT_LIST = []
 # A CSRF token that expires in 1 year
-WTF_CSRF_TIME_LIMIT = 3600
-WTF_CSRF_SECRET_KEY = TOKEN
+# WTF_CSRF_TIME_LIMIT = 3600
+# WTF_CSRF_SECRET_KEY = TOKEN
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = ''
 
