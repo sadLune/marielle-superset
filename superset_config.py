@@ -6,11 +6,10 @@ AUTH_TYPE = 1  # Database Authentication
 
 # Superset specific config
 ROW_LIMIT = 5000
-TOKEN = str(os.urandom(24))
 
 # Flask App Builder configuration
 # Your App secret key
-SECRET_KEY = os.getenv("FLASK_SECRET_KEY")
+SECRET_KEY = '\xbf)zw\x12\xf0D\xc8\xe2\xd8!z\xf1c\x1c6t\x0c\x86eo)\x80*'
 
 # The SQLAlchemy connection string to your database backend
 # This connection defines the path to the database that stores your
