@@ -10,7 +10,7 @@ TOKEN = str(os.urandom(24))
 
 # Flask App Builder configuration
 # Your App secret key
-SECRET_KEY = TOKEN
+SECRET_KEY = os.getenv("FLASK_SECRET_KEY")
 
 # The SQLAlchemy connection string to your database backend
 # This connection defines the path to the database that stores your
@@ -29,7 +29,6 @@ WTF_CSRF_ENABLED = True
 WTF_CSRF_EXEMPT_LIST = ['login', 'superset.csrf_token', ]
 # A CSRF token that expires in 1 year
 WTF_CSRF_TIME_LIMIT = 3600
-WTF_CSRF_SECRET_KEY = TOKEN
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = ''
 
