@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:${PORT} superset
+web: gunicorn -b 0.0.0.0:${PORT} "superset.app:create_app()"
