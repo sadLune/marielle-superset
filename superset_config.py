@@ -1,8 +1,8 @@
 import os
 
-AUTH_ROLE_PUBLIC = 'Public'
-AUTH_USER_REGISTRATION = True
-AUTH_USER_REGISTRATION_ROLE = "Public"
+AUTH_TYPE = 1  # Database Authentication
+# AUTH_USER_REGISTRATION = True
+# AUTH_USER_REGISTRATION_ROLE = "Public"
 
 # Superset specific config
 ROW_LIMIT = 5000
@@ -19,7 +19,7 @@ SECRET_KEY = TOKEN
 # you want to explore are managed directly in the web UI
 SQLALCHEMY_DATABASE_URI = 'sqlite:////app/.superset/superset.db'
 # Flask-WTF flag for CSRF
-WTF_CSRF_ENABLED = True
+WTF_CSRF_ENABLED = False
 # Add endpoints that need to be exempt from CSRF protection
 WTF_CSRF_EXEMPT_LIST = []
 # A CSRF token that expires in 1 year
@@ -32,7 +32,7 @@ SESSION_COOKIE_HTTPONLY = False
 
 SESSION_COOKIE_SAMESITE = 'None'
 
-RECAPTCHA_USE_SSL = False
-RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC')
-RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE')
-RECAPTCHA_OPTIONS = {'theme': 'white'}
+# RECAPTCHA_USE_SSL = False
+# RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC')
+# RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE')
+# RECAPTCHA_OPTIONS = {'theme': 'white'}
